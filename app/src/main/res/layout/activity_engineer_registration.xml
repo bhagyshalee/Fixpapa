@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_background"
+    android:orientation="vertical"
+    tools:context=".VendorPart.EngineerRegistration">
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/titleRegis"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="@dimen/_10sdp"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/titleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="@string/engineer_registration_text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/backImage"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="@dimen/_90sdp"
+                    android:layout_weight="1"
+                    android:src="@drawable/back_icon" />
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/engineerProfilePic"
+                            android:layout_width="@dimen/_70sdp"
+                            android:layout_height="@dimen/_70sdp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/_20sdp"
+                            android:src="@drawable/user_circle_img" />
+
+                        <EditText
+                            android:id="@+id/engName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/engineerProfilePic"
+                            android:background="@drawable/edittext_border"
+                            android:hint="@string/name_text"
+                            android:inputType="text"
+                            android:padding="@dimen/_7sdp"
+                            android:textSize="@dimen/_12sdp"
+
+                            />
+
+                        <EditText
+                            android:id="@+id/engContactNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/engName"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:background="@drawable/edittext_border"
+                            android:hint="@string/contact_no_text"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:padding="@dimen/_7sdp"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <EditText
+                            android:id="@+id/engEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/engContactNo"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:background="@drawable/edittext_border"
+                            android:hint="@string/email_address_text"
+                            android:inputType="textEmailAddress"
+                            android:padding="@dimen/_7sdp"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <!--   <LinearLayout
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:gravity="center_vertical"
+                               android:orientation="horizontal">
+
+                               <Spinner
+                                   android:id="@+id/experienceSpinner"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:backgroundTint="@color/lightGray"
+                                   android:textColor="#66000000"></Spinner>
+                           </LinearLayout>-->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/select_yearofexp_text"
+                            android:layout_marginTop="@dimen/_15sdp"/>
+
+                        <LinearLayout
+                            android:id="@+id/spinnerLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/engEmail"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:background="@drawable/edittext_border"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_1sdp">
+
+
+                            <Spinner
+                                android:id="@+id/experienceSpinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/engEmail"
+                                android:forceHasOverlappingRendering="true"
+                                android:gravity="center"
+                                android:overScrollMode="never"
+                                android:spinnerMode="dropdown"/>
+                        </LinearLayout>
+
+
+                        <EditText
+                            android:id="@+id/engPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/spinnerLayout"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:background="@drawable/edittext_border"
+                            android:hint="@string/password_text"
+                            android:inputType="textPassword"
+                            android:padding="@dimen/_7sdp"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <EditText
+                            android:id="@+id/engConPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/userPassword"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:background="@drawable/edittext_border"
+                            android:hint="@string/confirm_password_text"
+                            android:inputType="textPassword"
+                            android:padding="@dimen/_7sdp"
+                            android:textSize="@dimen/_12sdp" />
+
+
+                        <EditText
+                            android:id="@+id/engAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_70sdp"
+                            android:layout_below="@+id/userConPassword"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:background="@drawable/edittext_border"
+                            android:gravity="top"
+                            android:hint="@string/address_text"
+                            android:inputType="textPostalAddress"
+                            android:padding="@dimen/_7sdp"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:gravity="center"
+                            android:padding="@dimen/_10sdp"
+                            android:text="@string/experts_in_text"
+                            android:textStyle="bold" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/expertInRecycler"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_20sdp"
+                            android:layout_marginTop="@dimen/_5sdp" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/buttonVendorSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorPrimary"
+                android:text="@string/signup_text"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="@dimen/_6sdp"
+        android:weightSum="1">
+        <TextView
+            android:layout_weight="0.8"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:id="@+id/addressTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/address_text"
+            android:padding="@dimen/_10sdp"/>
+        <ImageView
+            android:layout_weight="0.1"
+            android:id="@+id/addressEdit"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/edit_icon"/>
+        <ImageView
+            android:layout_weight="0.1"
+            android:id="@+id/addressDelete"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/delete_icon"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10sdp"
+      >
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/addressAddress"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/verification_suggestion_text"
+            android:gravity="center|left"
+            />
+
+    </LinearLayout>
+</LinearLayout>

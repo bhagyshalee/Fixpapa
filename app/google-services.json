@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "677218008910",
+    "firebase_url": "https://fixpapa-550d6.firebaseio.com",
+    "project_id": "fixpapa-550d6",
+    "storage_bucket": "fixpapa-550d6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:677218008910:android:a5986126a8f039cb",
+        "android_client_info": {
+          "package_name": "com.fixpapa.ffixpapa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "677218008910-ecin8g6mbau3d1rmmd7elm08ptgf8hva.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fixpapa.ffixpapa",
+            "certificate_hash": "2c8d0822274ea82fbf62ffdf274d88763f750731"
+          }
+        },
+        {
+          "client_id": "677218008910-b91q97fb5jaqocrmlnt6f8dh1mprbnf6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8ULcLzfoc3hPDqkqeMuhSWzoqNdVYO54"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "677218008910-31lbla4iqcnaap6fn8evg34qajnkt821.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "677218008910-qhchgm46fa6u1jn9df9og6lb192qr6j8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.gl.fixpapa"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

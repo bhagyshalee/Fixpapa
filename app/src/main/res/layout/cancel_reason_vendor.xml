@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/titleIss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/_15sdp"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/brandNameShow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:gravity="center|left"
+            android:text="@string/order_detail_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/crossImage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginLeft="@dimen/_225sdp"
+            android:layout_weight="0.5"
+
+            android:src="@drawable/cross_icon" />
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titleIss"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/why_cancel_text"
+                android:textColor="@color/white" />
+            <TextView
+                android:id="@+id/orId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Help us to improve our service"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_5sdp"
+                android:background="@color/transparent"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/orderId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/order_detail_text"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp">
+
+                <RadioButton
+                    android:textColor="@color/gray"
+                    android:textStyle="italic"
+                    android:id="@+id/radioButtonOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_8sdp"
+                    android:text="@string/vendor_reason1_text" />
+
+                <RadioButton
+                    android:textColor="@color/gray"
+                    android:textStyle="italic"
+                    android:id="@+id/radioButtonTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_8sdp"
+                    android:text="@string/vendor_reason2_text" />
+
+                <RadioButton
+                    android:textColor="@color/gray"
+                    android:textStyle="italic"
+                    android:id="@+id/radioButtonThree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_8sdp"
+                    android:text="@string/vendor_reason3_text" />
+
+                <RadioButton
+                    android:textColor="@color/gray"
+                    android:textStyle="italic"
+                    android:id="@+id/radioButtonFour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_8sdp"
+                    android:text="@string/vendor_reason4_text" />
+
+                <RadioButton
+                    android:textColor="@color/gray"
+                    android:textStyle="italic"
+                    android:id="@+id/radioButtonFive"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_8sdp"
+                    android:text="@string/vendor_reason5_text" />
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/otherReasonText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/edittext_border"
+                android:hint="@string/other_if_required_text"
+                android:padding="@dimen/_5sdp"
+                android:textSize="@dimen/_13sdp"
+                android:inputType="text"/>
+
+            <Button
+                android:id="@+id/sendCancelButton"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:background="@drawable/primarycolor_circle_background"
+                android:text="@string/cancel_jobs_text"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:layout_marginBottom="@dimen/_30sdp"/>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>

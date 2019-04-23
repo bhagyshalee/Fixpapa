@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/designPartName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:padding="@dimen/_5sdp"
+        android:text="@string/cost_text"
+        android:textSize="@dimen/_11sdp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        />
+
+    <TextView
+        android:id="@+id/designPartNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25"
+        android:padding="@dimen/_5sdp"
+        android:text="@string/cost_text"
+        android:textSize="@dimen/_11sdp"
+        android:ellipsize="end"
+        android:singleLine="true"/>
+
+    <TextView
+        android:id="@+id/designCost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25"
+        android:padding="@dimen/_5sdp"
+        android:text="@string/cost_text"
+        android:textSize="@dimen/_11sdp"
+        android:ellipsize="end"
+        android:singleLine="true"/>
+
+    <ImageView
+        android:id="@+id/deleteItem"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_weight="0.3"
+        android:src="@drawable/minus"
+        android:padding="@dimen/_2sdp"/>
+
+</LinearLayout>

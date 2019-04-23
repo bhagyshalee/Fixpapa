@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_5sdp"
+    android:gravity="center">
+<ImageView
+    android:layout_width="@dimen/_20sdp"
+    android:layout_height="@dimen/_20sdp"
+    android:src="@drawable/check_mark"/>
+    <TextView
+        android:id="@+id/textExpertIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_7sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:text="@string/experts_in_text"
+        android:textColor="@color/black"/>
+    </LinearLayout>

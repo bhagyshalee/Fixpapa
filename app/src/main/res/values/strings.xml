@@ -1,0 +1,278 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">FixPapa</string>
+    <!--
+    <string name="api_key">1886322648053541</string>
+-->
+    <string name="facebook_app_id">242197496398149</string>
+    <string name="fb_login_protocol_scheme">fb242197496398149</string>
+    <string name="type_user_text">Type Of User *</string>
+
+    <string name="name_text">Name</string>
+    <string name="password_text">Password</string>
+    <string name="partrequest_text">Part Request</string>
+    <string name="email_address_text">Email Address</string>
+    <string name="confirm_password_text">Confirm Password</string>
+    <string name="contact_no_text">Contact No</string>
+    <string name="address_text">Address</string>
+    <string name="additional_service_charge_text">Additional Service Charge</string>
+    <string name="additional_part_text">Additional Part</string>
+    <string name="add_text">Add</string>
+    <string name="alternate_text">House No./Street/Landmark</string>
+    <string name="location_text">Location</string>
+    <string name="gst_no_text">GST No</string>
+    <string name="signup_text">Sign Up</string>
+    <string name="user_registration_text">User Registration</string>
+    <string name="corporate_text">corporate</string>
+    <string name="home_text">home</string>
+    <string name="save_text">Save</string>
+    <string name="budget_text">Budget</string>
+    <string name="view_job_text">View Job</string>
+    <string name="post_text">Post</string>
+    <string name="generate_bill_text">Generate Bill</string>
+    <string name="generate__text">Generate</string>
+    <string name="job_complete_text">Job Complete</string>
+    <string name="pic_jobcat_text">Pick Product</string>
+    <string name="delivery_text">Delivery Address</string>
+    <string name="deliver_product_text">Deliver Product</string>
+    <string name="configuration_require_text">Configuration Required Like (RAM,Processor,HDD,Screen Size etc.)</string>
+    <string name="description_ofamsc_text">Description of AMC to be given</string>
+    <string name="description_ofrent_text">Description of Rent item to be given</string>
+    <string name="description_ofoffice_text">Description of work to be done</string>
+    <string name="date_of_commencement_text">Date of Commencement</string>
+    <string name="start_date_text">Start Date</string>
+    <string name="start_job_text">Start Job</string>
+    <string name="statusofjob_text">Status Of Job</string>
+    <string name="end_date_text">End Date</string>
+    <string name="schedule_on_text">Scheduled On</string>
+    <string name="completed_on_text">Completed On</string>
+    <string name="review_text">Review</string>
+    <string name="comment_text">Comment</string>
+    <string name="complete_text">Complete</string>
+    <string name="pending_text">Pending</string>
+    <string name="detail_text">Detail</string>
+    <string name="description_optional_text">Description(Optional)</string>
+    <string name="whats_thisamount_include_text">What\'s this</string>
+    <string name="picture_optional_text">Picture(Optional)</string>
+    <string name="config_required_text">Configuration Required Like (Ram,Processor,Hdd,OS ,Screen size)</string>
+
+    <!--otp-->
+    <string name="verification_text">Verification</string>
+    <string name="verification_suggestion_text">Please enter otp,received on your \n mobile number</string>
+    <string name="verification_email_text">Please enter otp,received on your \n given email</string>
+    <string name="resend_otp_text">Resend OTP</string>
+    <string name="submit_text">Submit</string>
+    <string name="approve_text">Approve</string>
+    <string name="otp_empty_text">Please enter otp</string>
+    <string name="otp_enter_text">Enter OTP</string>
+    <string name="otp_valid_text">Please enter valid otp</string>
+    <string name="otp_match_text">Wrong Otp</string>
+
+    <!--forgot password-->
+
+
+    <!--error msg-->
+    <string name="name_error">Please enter name</string>
+    <string name="email_empty_error">Please enter email</string>
+    <string name="email_pattern_error">Please enter valid email</string>
+    <string name="attachment_text">Attachment</string>
+    <string name="password_error">Please enter password</string>
+    <string name="contact_error">Please enter contact no.</string>
+    <string name="contact_valid_error">Please enter valid contact no.</string>
+    <string name="address_error">Please enter address</string>
+    <string name="selection_address_error">Please select location</string>
+    <string name="altaddress_error">Please enter street/landmark/house no.</string>
+    <string name="confirm_password_error">Password does not match</string>
+    <string name="gst_error">Please enter gst no.</string>
+
+    <string name="email_mobile_error">Please enter email id / mobile no</string>
+    <string name="progress_show" tools:ignore="TypographyEllipsis">Loading...</string>
+    <string name="product_configuration_text">Product Configuration</string>
+    <string name="product_detail_text">Product Detail</string>
+    <string name="select_usertype_show">Please select type of user</string>
+    <string name="mobile_empty_error">Please select mobile number</string>
+
+    <string name="required_empty_error">Required Field</string>
+
+
+    <!--login-->
+    <string name="email_mobile_text">Email Id / Mobile No</string>
+    <string name="forgotpassword_text">Forgot Password</string>
+    <string name="customer_text">Customer</string>
+    <string name="partner_text">Partner</string>
+    <string name="engineer_text">Engineer</string>
+    <string name="engineer_location_text">Engineer Location</string>
+    <string name="customer_location_text">Customer Location</string>
+    <string name="engineers_text">Engineers</string>
+    <string name="category_name_text">(Category Name) </string>
+    <string name="repair_text">Repair</string>
+
+
+    <string name="register_customer_text">Register as user</string>
+    <string name="register_partner_text">Register as partner</string>
+
+    <string name="login_text">Login</string>
+    <string name="register_text">Register</string>
+    <string name="skip_text">Skip</string>
+    <string name="logout_text">Logout</string>
+
+    <!--notification-->
+    <string name="notification_text">Notification</string>
+    <string name="title_activity_user_home_screen">UserHomeScreen</string>
+    <string name="action_settings">Settings</string>
+
+
+    <!--home Page-->
+    <string name="myprofile_text">My Profile</string>
+    <string name="job_title_text">Job Title</string>
+    <string name="myinfo_text">My Info</string>
+    <string name="account_setting_text">Account Setting</string>
+    <string name="aboutus_text">About Us</string>
+    <string name="term_condition_text">Terms &amp; Conditions</string>
+    <string name="term_content_text">1. Warranty/Guarantee on new product or spare parts would be as described on the material bill online. Please insist to generate the material bill online from our FIXPAPA IT Professional in case he is procuring the materials for you.\n" +"\n"+
+
+                "2. We FIXPAPA are individual IT sales &amp; service provider and have a well-qualified and police verified IT Professionals. We are not authorized service centre for any IT brand.\n" +"\n"+
+                "3. Any device which is repairable would be insured only up to the repair amount or the amount mentioned above or the depreciated value which will be verified by FIXPAPA IT Professional.\n" +"\n"+
+                "4. Physical damage, adaptor, charger and any sort of software will not be covered in warranty in any case.\n" +
+                "5. We strongly discourage any direct contact with our FIXPAPA IT Professional regarding a job booked through us, as in such cases FIXPAPA will not be liable or responsible and has no control over the situation or condition. All warranty and service assurance offered by FIXPAPA, in such case, stands null &amp; void.\n" +"\n"+
+                "6. If you do have any complaints, suggestions or feedback with regard to the service or product quality, or our service provider, pricing etc. please report it to our Customer Support Desk at 0141-2980666, +919799044449 or mail us at support@fixpapa.com. It is advisable to do this within 48hrs of your service.\n"+"\n"</string>
+    <string name="shareapp_text">Share App</string>
+    <string name="task_list_text">Task List</string>
+    <string name="help_text">Help</string>
+    <string name="manage_address_text">Manage Address</string>
+    <string name="account_holdername_text">Account Holder Name</string>
+    <string name="search_text">Search</string>
+    <string name="accept_text">Accept</string>
+    <string name="accept_now_text">Accept Now</string>
+    <string name="schedule_text">Schedule</string>
+    <string name="scheduled_text">Scheduled</string>
+    <string name="ok_text">Ok</string>
+    <string name="reject_text">Reject</string>
+    <string name="open_text">Open</string>
+    <string name="ongoing_text">Ongoing</string>
+    <string name="closed_text">Closed</string>
+    <string name="firebase_token">FIREBASETOKEN</string>
+    <string name="today_text">Today</string>
+    <string name="tomorrow_text">Tomorrow</string>
+    <string name="thisweek_text">This week</string>
+    <string name="my_booking_text">My Booking</string>
+    <string name="myjobs_text">My Jobs</string>
+    <string name="all_category_text">All Categories</string>
+    <string name="all_job_text">All Job</string>
+    <string name="old__password_text">Old Password</string>
+    <string name="new__password_text">New Password</string>
+
+    <string name="fixproblem_text">Fix Problem</string>
+    <string name="purchase_text">Purchase</string>
+    <string name="office_setup_text">Office Setup</string>
+    <string name="maintenance_text">Maintenance</string>
+    <string name="rent_text">Rent</string>
+
+
+    <string name="fixproblem_text_edit">Repair Services</string>
+    <string name="purchase_text_edit">Consult &amp; Buy</string>
+    <string name="office_setup_text_edit">Get Bid for IT Setup</string>
+    <string name="maintenance_text_edit">Maintenance Services</string>
+    <string name="rent_text_edit">Products on Rent</string>
+
+    <string name="next_text">Next</string>
+    <string name="need_to_givefor_text">Need to give for</string>
+    <string name="jobtobe_done_givefor_text">Job to be Done</string>
+    <string name="update_text">Update</string>
+    <string name="done_text">Done</string>
+    <string name="part_name_text">Part Name</string>
+    <string name="bank_name_text">Bank Name</string>
+    <string name="part_number_text">Part Number</string>
+    <string name="bank_number_text">Cheque Number</string>
+    <string name="service_total_text">Service Total</string>
+    <string name="service_tax_text">Service Tax</string>
+    <string name="cost_text">Cost</string>
+    <string name="jobDetail_text">Job Detail</string>
+    <string name="send_text">Send</string>
+    <string name="no_systems_text">No. of Systems</string>
+    <string name="no_engineer_text">No engineer Available</string>
+    <string name="time_period_text">Time Period</string>
+
+    <string name="change_email_text">Change Email</string>
+    <string name="type_of_product_text">Type Of Product</string>
+    <string name="type_of_brands_text">Type Of Brands</string>
+    <string name="issues_withdevice_text">Issues With Product</string>
+    <string name="issues_text">Issues</string>
+    <string name="total_price_text">Total Price</string>
+    <string name="payment_text">Payment</string>
+    <string name="expected_time_text">Expected Time (In Days)</string>
+
+    <string name="change_mobile_text">Change Mobile Number</string>
+    <string name="change_password_text">Change Password</string>
+    <string name="check_text">Check</string>
+    <string name="enter_email_ifchange_text">Enter new email if you want to update</string>
+    <string name="enter_mobile_ifchange_text">Enter new mobile number if you want to update</string>
+    <string name="addresses_text">Addresses</string>
+    <string name="add_new_address_text">Add New Address</string>
+    <string name="create_new_jobs_text">Create New Job</string>
+    <string name="other_if_required_text">Other (If Required)</string>
+    <string name="order_detail_text">Order Detail</string>
+    <string name="userUnsatisfied_text">Customer Unsatisfied</string>
+    <string name="order_status_text">Order Status</string>
+    <string name="reason_title_text">Select reason for cancel the job</string>
+    <string name="job_placed_text">Job Placed</string>
+    <string name="why_cancel_text">Please tell us why...</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--vendor-->
+
+    <string name="add_engineer_text">Add Engineer</string>
+    <string name="block_engineer_text">Block/Unblock Engineer</string>
+    <string name="update_engineer_text">Update Engineer</string>
+    <string name="setting_text">Setting</string>
+    <string name="date_text">Date</string>
+    <string name="specify_damage_text">Specify Damage</string>
+    <string name="product_condition_text">Product Condition</string>
+    <string name="vendor_reason1_text">Engineer not available</string>
+    <string name="vendor_reason2_text">Mistakenly accepted</string>
+    <string name="vendor_reason3_text">Job location is too far or not good area to reach</string>
+    <string name="vendor_reason4_text">We don\'t have support for this problem</string>
+    <string name="vendor_reason5_text">Client is not good (Blacklisted)</string>
+    <string name="vendor_reason6_text">Other (Text box required maximum words 100)</string>
+    <string name="notification_empty_text">You don\'t have any notifications right now</string>
+    <string name="time_text">Time</string>
+    <string name="cancel_jobs_text">Cancel Job</string>
+    <string name="request_text">Request</string>
+    <string name="requested_text">Requested</string>
+    <string name="reason_text">Reason</string>
+    <string name="vendor_text">Vendor</string>
+    <string name="cancel_text">Cancel</string>
+    <string name="cash_payment_text">Cash Payment</string>
+    <string name="online_payment_text">Online Payment</string>
+    <string name="selectif_other_text">Comment If Select Other</string>
+    <string name="select_yearofexp_text">Select Year Of Experience</string>
+    <string name="mobile_number_text">Mobile Number</string>
+    <string name="assign_engineer_text">Assign Engineer</string>
+    <string name="assign_text">Assign</string>
+    <string name="assign_jobs_text">Assign Jobs</string>
+    <string name="new_jobs_text">New Jobs</string>
+    <string name="notavaliableservice_text">Jobs are not available</string>
+    <string name="onsite_text">On Site</string>
+    <string name="offsite_text">Off Site</string>
+    <string name="block_text">Block</string>
+    <string name="edit_profile_text">EditProfile</string>
+    <string name="unblock_text">Unblock</string>
+    <string name="experience_text">Experience</string>
+    <string name="showChequeTitle">Make cheque in name of " G L Technovations"</string>
+    <string name="expertise_text">Expertise</string>
+    <string name="other_text">Other</string>
+
+    <string name="customer_reason1_text">I will do later</string>
+    <string name="customer_reason2_text">Need more information</string>
+    <string name="customer_reason3_text">Job placed by mistake</string>
+    <string name="customer_reason4_text">Expert is not good</string>
+
+    <string name="notlogin_text">You Are Not Login</string>
+    <string name="ongoing_jobs_text">Ongoing Jobs</string>
+    <string name="experts_in_text">Experts In</string>
+    <string name="engineer_registration_text">Engineer Registration</string>
+    <string name="title_activity_office_setup_post">OfficeSetupPost</string>
+    <string name="select_location">Select Location</string>
+
+</resources>

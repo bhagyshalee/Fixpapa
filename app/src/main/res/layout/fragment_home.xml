@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserPart.HomePart.Fragments.HomeFragment">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/actionHome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/_10sdp"
+            android:weightSum="1"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/searchEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_50sdp"
+                android:layout_weight="0.1"
+                android:background="@drawable/white_circle_background"
+                android:focusable="false"
+                android:hint="@string/search_text"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_12sdp" />
+
+            <ImageView
+                android:id="@+id/searchIconHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_weight="0.45"
+                android:src="@drawable/search_icon" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_weight="0.45"
+                android:src="@drawable/location_icon" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:orientation="horizontal"
+            android:id="@+id/homeTextLayout"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/titleOfActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:padding="@dimen/_10sdp"
+                android:text="Home"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/_15sdp"/>
+            <!--
+                        <ImageView
+                            android:id="@+id/forgotBack"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_40sdp"
+                            android:layout_weight="0.6"
+                            android:src="@drawable/back_icon" />-->
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/homeTextLayout"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/problemCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    card_view:cardCornerRadius="4dp">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/fixProblemRecycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_30sdp" />
+
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/fixProblemSolveText"
+                android:layout_width="wrap_content"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:background="@drawable/primarycolor_circle_background"
+                android:forceHasOverlappingRendering="true"
+                android:gravity="center"
+                android:text="Service"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/showAllFixProblem"
+                android:layout_width="@dimen/_85sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right|center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:text="see all"
+                android:textColor="@color/gray" />
+
+            <RelativeLayout
+                android:id="@+id/purchaseCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/problemCard"
+                android:layout_marginTop="@dimen/_25sdp"
+
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_150sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        card_view:cardCornerRadius="4dp">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/purchaseRecycler"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/fixProblemRecycler"
+                            android:layout_marginTop="@dimen/_30sdp"
+                            />
+                    </android.support.v7.widget.CardView>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/purchaseText"
+                    android:layout_width="wrap_content"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:background="@drawable/primarycolor_circle_background"
+                    android:forceHasOverlappingRendering="true"
+                    android:gravity="center"
+                    android:text="Service"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+
+                    android:id="@+id/showAllPurchase"
+                    android:layout_width="@dimen/_85sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right|center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:text="see all"
+                    android:textColor="@color/gray" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/officeCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/purchaseCard"
+                android:layout_marginTop="@dimen/_25sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_150sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        card_view:cardCornerRadius="4dp">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/officeSetupRecycler"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/purchaseRecycler"
+                            android:layout_marginTop="@dimen/_30sdp"
+                            />
+                    </android.support.v7.widget.CardView>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/officeSetupText"
+                    android:layout_width="wrap_content"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:background="@drawable/primarycolor_circle_background"
+                    android:forceHasOverlappingRendering="true"
+                    android:gravity="center"
+                    android:text="Service"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/showAllOfficeSetUp"
+                    android:layout_width="@dimen/_85sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right|center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:text="see all"
+                    android:textColor="@color/gray" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/maintenanceCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/officeCard"
+                android:layout_marginTop="@dimen/_25sdp"
+
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_150sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        card_view:cardCornerRadius="4dp">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/maintenanceRecycler"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/officeSetupRecycler"
+                            android:layout_marginTop="@dimen/_30sdp"
+                            />
+                    </android.support.v7.widget.CardView>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/maintenanceText"
+                    android:layout_width="wrap_content"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:background="@drawable/primarycolor_circle_background"
+                    android:forceHasOverlappingRendering="true"
+                    android:gravity="center"
+                    android:text="Service"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/showAllMaintenance"
+                    android:layout_width="@dimen/_85sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right|center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:text="see all"
+                    android:textColor="@color/gray" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/maintenanceCard"
+                android:layout_marginTop="@dimen/_25sdp"
+
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/rentCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_150sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        card_view:cardCornerRadius="4dp">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rentRecycler"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/maintenanceRecycler"
+                            android:layout_marginTop="@dimen/_30sdp"
+                            />
+
+                    </android.support.v7.widget.CardView>
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/rentText"
+                    android:layout_width="wrap_content"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:background="@drawable/primarycolor_circle_background"
+                    android:forceHasOverlappingRendering="true"
+                    android:gravity="center"
+                    android:text="Service"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/showAllRent"
+                    android:layout_width="@dimen/_85sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right|center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:text="see all"
+                    android:textColor="@color/gray" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserPart.HomePart.Fragments.UserProfileFragment"
+    android:background="@drawable/home_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/_5sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:gravity="center|left"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/account_setting_text"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="@color/black"
+                    android:layout_margin="@dimen/_10sdp"/>
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_320sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@color/white"
+                app:cardCornerRadius="@dimen/_5sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:id="@+id/changeEmailLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/accountHolderName"
+                        android:orientation="vertical"
+                       >
+
+                        <TextView
+                            android:id="@+id/myInfo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:drawableLeft="@drawable/my_info"
+                            android:drawablePadding="@dimen/_10sdp"
+                            android:drawableRight="@drawable/ic_right_arrow_24dp"
+                            android:padding="@dimen/_10sdp"
+                            android:text="@string/change_email_text" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.1dp"
+                            android:background="@color/gray" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/changeMobileLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/changeEmailLayout"
+                        android:orientation="vertical"
+                       >
+
+                        <TextView
+                            android:id="@+id/accountSettingPass"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:drawableLeft="@drawable/account_setting"
+                            android:drawablePadding="@dimen/_10sdp"
+                            android:drawableRight="@drawable/ic_right_arrow_24dp"
+                            android:padding="@dimen/_10sdp"
+                            android:text="@string/change_mobile_text"
+                            />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.1dp"
+                            android:background="@color/gray" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/changePasswordLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/changeMobileLayout"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:id="@+id/accountSetting"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:drawableLeft="@drawable/change_password"
+                            android:drawablePadding="@dimen/_10sdp"
+                            android:drawableRight="@drawable/ic_right_arrow_24dp"
+                            android:padding="@dimen/_10sdp"
+                            android:text="@string/change_password_text"
+                            />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.1dp"
+                            android:background="@color/gray" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
